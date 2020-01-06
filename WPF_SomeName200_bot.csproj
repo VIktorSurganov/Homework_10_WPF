@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Windows\**" />
+    <EmbeddedResource Remove="Windows\**" />
+    <None Remove="Windows\**" />
+    <Page Remove="Windows\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\1.jpg" />
+    <None Remove="Resources\icons8_close_window_100px.png" />
+    <None Remove="Resources\icons8_musical_notes_100px.png" />
+    <None Remove="Resources\icons8_picture_100px.png" />
+    <None Remove="Resources\icons8_send%28blue%29_100p.png" />
+    <None Remove="Resources\icons8_send_100px.png" />
+    <None Remove="Resources\icons8_summer_100px.png" />
+    <None Remove="Resources\more_okean_volny_poverkhnost_110859_5184x3456.jpg" />
+    <None Remove="Resources\yourMsg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+    <PackageReference Include="Telegram.Bot" Version="15.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\icons8_close_window_100px.png" />
+    <Resource Include="Resources\icons8_musical_notes_100px.png" />
+    <Resource Include="Resources\icons8_picture_100px.png" />
+    <Resource Include="Resources\icons8_send(blue)_100p.png" />
+    <Resource Include="Resources\icons8_send_100px.png" />
+    <Resource Include="Resources\icons8_summer_100px.png" />
+    <Resource Include="Resources\yourMsg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+
+</Project>

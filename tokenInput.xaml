@@ -1,0 +1,58 @@
+﻿<Window x:Class="WPF_SomeName200_bot.tokenInput"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_SomeName200_bot"
+        mc:Ignorable="d"
+        Title="tokenInput" Height="93" Width="620" WindowStyle="None" ResizeMode="NoResize" KeyDown="Window_KeyDown">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,1" StartPoint="0,1">
+                <GradientStop Color="White"/>
+                <GradientStop Color="#FF22C9EF" Offset="1"/>
+                <GradientStop Color="#FF22C9EF" Offset="0.093"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="searchBTN" Width="55" Height="30" BorderThickness="1,1,1,1" HorizontalAlignment="Right" Margin="0,0,70,10" VerticalAlignment="Bottom" Content=".  .  ." Click="searchBTN_Click" BorderBrush="White" Foreground="White" Grid.Column="1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="1,1" StartPoint="0,1">
+                    <GradientStop Color="#FF20C9EF"/>
+                    <GradientStop Color="#FFBDEFFA" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="okBTN" Width="55" Height="30" BorderThickness="1,1,1,1" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Content="OK" Click="okBTN_Click" BorderBrush="White" Foreground="White" FontSize="20" FontFamily="Leelawadee UI Semilight" Grid.Column="1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="1,1" StartPoint="0,1">
+                    <GradientStop Color="#FF1FC8EF"/>
+                    <GradientStop Color="#FF94E5F7" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="forTokenTbox" Height="30" Width="420" HorizontalAlignment="Left" Margin="70,0,0,10" VerticalAlignment="Bottom" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" TextChanged="forTokenTbox_TextChanged" BorderBrush="White" Background="White" BorderThickness="0,0,0,0" Grid.ColumnSpan="2"/>
+        <TextBlock VerticalAlignment="Top" Margin="100,5,0,0" HorizontalAlignment="Left" Width="420" Height="25" Text="Укажите путь к вашему токену" TextAlignment="Center" FontSize="22" FontFamily="Candara Light" FontWeight="Normal" Foreground="White" Grid.ColumnSpan="2"/>
+        <Rectangle HorizontalAlignment="Left" Opacity="0" Height="22" Margin="0,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="560" MouseDown="Rectangle_MouseDown" Fill="Black" Grid.ColumnSpan="2"/>
+        <Button BorderThickness="1,1,1,1" Height="20" Width="55" Margin="0 0 10 0" Content="X" VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click" BorderBrush="White" Grid.Column="1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="1,1" StartPoint="0,1">
+                    <GradientStop Color="#FF22C9EF"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="countTB"
+                   Width="50" 
+                   Height="30"                    
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="18,0,0,7"
+                   FontSize="20" 
+                   TextAlignment="Center" 
+                   FontFamily="Calibry Light"/>
+    </Grid>
+</Window>
