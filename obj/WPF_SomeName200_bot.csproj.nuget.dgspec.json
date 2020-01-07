@@ -1,0 +1,98 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\enin1\\Desktop\\SkillBoxHomeworks\\Homework_10 (Визуальное программирование. Основы технологии Windows Presentation Foundation)\\WPF_SomeName200_bot.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\enin1\\Desktop\\SkillBoxHomeworks\\Homework_10 (Визуальное программирование. Основы технологии Windows Presentation Foundation)\\WPF_SomeName200_bot.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\enin1\\Desktop\\SkillBoxHomeworks\\Homework_10 (Визуальное программирование. Основы технологии Windows Presentation Foundation)\\WPF_SomeName200_bot.csproj",
+        "projectName": "WPF_SomeName200_bot",
+        "projectPath": "C:\\Users\\enin1\\Desktop\\SkillBoxHomeworks\\Homework_10 (Визуальное программирование. Основы технологии Windows Presentation Foundation)\\WPF_SomeName200_bot.csproj",
+        "packagesPath": "C:\\Users\\enin1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\enin1\\Desktop\\SkillBoxHomeworks\\Homework_10 (Визуальное программирование. Основы технологии Windows Presentation Foundation)\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\enin1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Telegram.Bot": {
+              "target": "Package",
+              "version": "[15.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
